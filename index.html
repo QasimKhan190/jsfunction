@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        // add
+        function addNumbers() {
+            let num1 = parseInt(prompt("Enter first number:"));
+            let num2 = parseInt(prompt("Enter second number:"));
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Please enter valid numbers!");
+            } else {
+                let sum = num1 + num2;
+                alert("The sum is: " + sum);
+            }
+        }
+
+// multiply
+
+        function multiplyNumbers() {
+            let num3 = parseInt(prompt("Enter first number:"));
+            let num4 = parseInt(prompt("Enter second number:"));
+            if (isNaN(num3) || isNaN(num4)) {
+                alert("Please enter valid numbers!");
+            } else {
+                let mult = num3 * num4;
+                alert(`${num3} x ${num4} : ${mult}`);
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="addNumbers()" class="add"> Add Two Numbers </button>
+    <br>
+    <br>
+    <button onclick="multiplyNumbers()" class="add"> multiply Two Numbers </button>
+    
+</body>
+</html>
